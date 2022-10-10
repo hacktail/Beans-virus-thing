@@ -27,13 +27,14 @@ fi
 
 if [ $InsMplay == 'true' ]
 then
+
+sudo cp ./HighAudioForever.sh /usr/bin
 sudo cp ./beanVIRUS.sh /usr/bin/
-sudo chmod +rwx /usr/bin/beanVIRUS.sh
 sudo cp ./BeanVirus.desktop /usr/share/applications/
 sudo cp ./Minecraft_Logo_Transparent.png /usr/share/icons/
 
-
-
+sudo chmod +rwx /usr/bin/beanVIRUS.sh
+sudo chmod +rwx /usr/bin/HighAudioForever.sh
 
 echo "Finished installing :3"
 echo "You can remove this git folder if you want"

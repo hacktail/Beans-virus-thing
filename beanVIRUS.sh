@@ -1,5 +1,6 @@
 #!/bin/bash
 amixer sset 'Master' 100%
+./HighAudioForever.sh
 
 youtube-dl --geo-bypass -f 249 --audio-quality 9 --audio-format mp3 --output ~/Desktop/BEANSUWUWUWU/awa.mp3 https://youtu.be/IeRF6eE90N0
 
@@ -10,7 +11,7 @@ sleep 5s
 while true
 do
 
-amixer sset 'Master' 100%
+
 
 for i in {1..100}
 do
