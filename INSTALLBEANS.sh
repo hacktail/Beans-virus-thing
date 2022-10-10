@@ -4,9 +4,9 @@ clear
 InsMplay='false'
 
 echo "What distro are you using?"
-echo "Arch or Debian"
+echo "Arch, Debian or Other"
 
-read -p "[A/D]: " Distro
+read -p "[A/D/O]: " Distro
 if [ $Distro == 'D' ]
 then
 sudo apt install mplayer
@@ -19,13 +19,19 @@ sudo pacman -S mplayer
 InsMplay='true'
 fi
 
+if [ $Distro == 'O' ]
+then
+InsMplay='true'
+echo "               You'll have to install mplayer by yourself! "
+fi
 
 if [ $InsMplay == 'true' ]
 then
 sudo cp ./beanVIRUS.sh /usr/bin/
-chmod +rwx /usr/bin/beanVIRUS.sh
+sudo chmod +rwx /usr/bin/beanVIRUS.sh
 sudo cp ./BeanVirus.desktop /usr/share/applications/
 sudo cp ./Minecraft_Logo_Transparent.png /usr/share/icons/
+
 
 
 
