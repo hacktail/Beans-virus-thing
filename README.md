@@ -11,7 +11,7 @@ chmod +rwx ./INSTALLBEANS.sh
 # How do I uninstall this?
 ```shell
 cd Beans-virus-thing
-chmod +rwx ./REMOVEBEANS.sh // Only if you haven't run the installer
+chmod +rwx ./REMOVEBEANS.sh #Only if you haven't run the installer
 ./REMOVEBEANS.sh
 ```
 
